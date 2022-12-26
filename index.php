@@ -28,25 +28,18 @@
           'purchaseUrl' => 'http://example.com'
       ],
   ];
-//function 邏輯包 
- function filterByAuthor($books){
-    $filteredBooks = [];
-    foreach ($books as $book){
-        if ($book ['author'] ==='Andy Weir'){
-
-            $filteredBooks[] =$book;
-        }
-   }
-
-return $filteredBooks;
-    }
 
 
+
+ 
+ $filteredBooks = array_filter($books,function ($book){
+      return $book['releaseYear'] > 1968;
+ })
    ?>
 
    <ul>
 
-      <?php foreach (filterByAuthor($books)as $book) :?>
+      <?php foreach ( $filteredBooks as $book) :?>
 
         
          <li> 
