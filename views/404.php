@@ -6,9 +6,9 @@
   <main>
     <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
       <!-- Replace with your content -->
-   <h1 class="text-2xl font-bold"> sorry. Page Not Found</h1>
+   <h1 class="text-2xl font-bold"> 喔喔！！有錯誤</h1>
    <p class="mt-4">
-    <a href="/" class="text-blue underline">Go back home</a>
+    <a href="/" class="text-blue underline">回首頁</a>
 </p>
       <!-- /End replace -->
     </div>

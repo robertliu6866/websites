@@ -4,7 +4,7 @@
 $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
 
 
-
+//路由控制器鏈接
 
 $routes =[
     '/' => 'controllers/index.php',
@@ -17,6 +17,8 @@ $routes =[
 
 ];
 
+// 帶進$uri = parse_url($_SERVER['REQUEST_URI'])['path']; and  $routes
+//如果不存在 回傳 function abort 404
 
 function routeToController($uri,$routes){
 

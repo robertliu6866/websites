@@ -19,14 +19,14 @@ function __construct($config,$username = 'root',$password= '')
        ]);
    }
 
-function query($query)
+function query($query,$params =[])
    {
 
 
        //PHP mysqli prepare()函數 
-       $statement = $this -> connection->prepare($query);
+       $statement = $this->connection ->prepare($query,$params);
     
-       $statement -> execute();
+       $statement -> execute($params);
        //PDO::FETCH_ASSOC：返回一個查詢為結果集合名稱的數組
        return $statement;
    }
