@@ -1,5 +1,5 @@
 <?php
 
-$heading = 'Testing';
-
-require "views/testing.view.php";
+view("testing.view.php",[
+    'heading' => 'Testing Us'
+ ]);
